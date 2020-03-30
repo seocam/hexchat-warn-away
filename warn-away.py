@@ -15,7 +15,6 @@ def warn_user_if_away(word, word_eol, userdata):
         print("\002 >>> You are away (reason: %s)" % away_reason)
 
 
-hexchat.hook_server("PRIVMSG", warn_user_if_away)
 hexchat.hook_print("Focus Tab", warn_user_if_away)
 
 print("Module %s loaded (version: %s)" % (__module_name__, __module_version__))
